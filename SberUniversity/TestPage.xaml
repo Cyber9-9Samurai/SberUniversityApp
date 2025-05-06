@@ -1,0 +1,115 @@
+﻿<Page x:Class="SberUniversity.TestPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SberUniversity"
+      xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
+      mc:Ignorable="d" 
+      d:DesignHeight="1920" d:DesignWidth="1080"
+      Title="TestPage">
+    <Page.Resources>
+        <ResourceDictionary Source="/Styles/TestPageStyles.xaml"/>
+    </Page.Resources>
+    
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="169"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Canvas Grid.Row="0">
+                <svgc:SvgViewbox Style="{StaticResource svg}" Source="assets/vector.svg"/>
+                <Button Content="Назад" Style="{StaticResource Returnbtn}" x:Name="Returnbtn" Click="Return"/>
+            </Canvas>
+            <Canvas  Grid.Row="1" Style="{StaticResource TestContainer}" Margin="60,5,60,102">
+                <TextBlock Style="{StaticResource Header2}" Text="Оценка SberQ"/>
+                <TextBlock xml:space="preserve" Style="{StaticResource Description}" Text="Для прохождения оценки SberQ Top вам потребуется 8 часов, а для нашего
+                    сегодняшнего теста на карьерную осознанность — всего 1,5 минуты.
+                    &#x0A;&#x0A;Ответьте на 5 вопросов и получите рекомендации к развитию, а также
+                    узнайте больше про оценку SberQ и программы СберУниверситета.
+                    Результаты отправим на указанную вами электронную почту." />
+                <StackPanel Style="{StaticResource TestQuestions}" DataContext="{StaticResource test1}">
+                    <Canvas Style="{StaticResource FirstQuestion}">
+                        <TextBlock Style="{StaticResource Ask}" Text="1. На какой срок у вас есть карьерная цель:" ></TextBlock>
+                        <Slider x:Name="slider1" Style="{StaticResource QuestSlider}" Value="{Binding FirstQuestion}" Minimum="1" Maximum="3" TickFrequency="1" IsSnapToTickEnabled="True" Width="880" Height="89"/>
+                        <Grid Style="{StaticResource TicksCont}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Style="{StaticResource Tick1}" Text="Нет цели" />
+                            <TextBlock Grid.Column="1" Style="{StaticResource Tick2}" Text="1-3 года"/>
+                            <TextBlock Grid.Column="2" Style="{StaticResource Tick3}" Text="3+ лет"/>
+                        </Grid>
+                    </Canvas>
+                    <Canvas Style="{StaticResource Questions}">
+                        <TextBlock Style="{StaticResource Ask}" Text="2. Как часто вы занимаетесь собственным развитием:" ></TextBlock>
+                        <Slider x:Name="slider2" Style="{StaticResource QuestSlider}" Value="{Binding SecondQuestion}" Minimum="1" Maximum="3" TickFrequency="1" IsSnapToTickEnabled="True" Width="880" Height="89"/>
+                        <Grid Style="{StaticResource TicksCont}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Style="{StaticResource Tick1}" Text="Редко" />
+                            <TextBlock Grid.Column="1" Style="{StaticResource Tick2}" Text="Периодически"/>
+                            <TextBlock Grid.Column="2" Style="{StaticResource Tick3}" Text="Постоянно"/>
+                        </Grid>
+                    </Canvas>
+                    <Canvas Style="{StaticResource QuestionsV2}">
+                        <TextBlock Style="{StaticResource Ask}" Text="3. Как вы понимаете свои сильные стороны:" ></TextBlock>
+                        <Slider x:Name="slider3" Style="{StaticResource QuestSlider}" Value="{Binding ThirdQuestion}" Minimum="1" Maximum="3" TickFrequency="1" IsSnapToTickEnabled="True" Width="880" Height="89"/>
+                        <Grid Style="{StaticResource TicksCont}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Style="{StaticResource Tick1}" Text="Не было мысли
+                                       про это" />
+                            <TextBlock Grid.Column="1" Style="{StaticResource Tick2}" Text="Запрашиваю обратную связь"/>
+                            <TextBlock Grid.Column="2" Style="{StaticResource Tick3}" Text="Прохожу
+                                       ассессмент"/>
+                        </Grid>
+                    </Canvas>
+                    <Canvas Style="{StaticResource QuestionsV2}">
+                        <TextBlock Style="{StaticResource Ask}" Text="4. Как вы понимаете, какие компетенции нужно развивать:" ></TextBlock>
+                        <Slider x:Name="slider4" Style="{StaticResource QuestSlider}" Value="{Binding FourthQuestion}" Minimum="1" Maximum="3" TickFrequency="1" IsSnapToTickEnabled="True" Width="880" Height="89"/>
+                        <Grid Style="{StaticResource TicksCont}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Style="{StaticResource Tick1}" Text="По мере столкновения
+                                       с трудностями" />
+                            <TextBlock Grid.Column="1" Style="{StaticResource Tick2}" Text="По рекомендации
+                                       руководства и коллег"/>
+                            <TextBlock Grid.Column="2" Style="{StaticResource Tick3}" Text="На основе карьерных
+                                       консультаций" />
+                        </Grid>
+                    </Canvas>
+                    <Canvas Style="{StaticResource LastQuestion}">
+                        <TextBlock Style="{StaticResource Ask}" Text="5. Как вы понимаете, какие компетенции нужно развивать:" ></TextBlock>
+                        <Slider x:Name="slider5" Style="{StaticResource QuestSlider}" Value="{Binding FivesQuestion}" Minimum="1" Maximum="3" TickFrequency="1" IsSnapToTickEnabled="True" Width="880" Height="89"/>
+                        <Grid Style="{StaticResource TicksCont}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Style="{StaticResource Tick1}" Text="А что это?" />
+                            <TextBlock Grid.Column="1" Style="{StaticResource Tick2}" Text="Надо значит надо"/>
+                            <TextBlock Grid.Column="2" Style="{StaticResource Tick3}" Text="Меня заряжает стремление
+                                       к амбициозным целям" />
+                        </Grid>
+                    </Canvas>
+                </StackPanel>
+                <Canvas>
+                    <Button Style="{StaticResource Sentbtn}" x:Name="Sentbtn" Click="Sent">Отправить ответы</Button>
+                </Canvas>
+            </Canvas>
+        </Grid>
+
+</Page>

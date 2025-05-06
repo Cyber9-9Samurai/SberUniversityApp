@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="assets\Background.png" />
+    <None Remove="assets\check.png" />
+    <None Remove="assets\Check.svg" />
+    <None Remove="assets\Checked.png" />
+    <None Remove="assets\QR1.png" />
+    <None Remove="assets\QR2.png" />
+    <None Remove="assets\QR3.png" />
+    <None Remove="assets\ScrollBar.png" />
+    <None Remove="assets\Thumb.png" />
+    <None Remove="assets\Thumb2.png" />
+    <None Remove="assets\Thumb3.png" />
+    <None Remove="assets\vector.svg" />
+    <None Remove="mailsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SharpVectors.Wpf" Version="1.8.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\Background.png" />
+    <Resource Include="assets\check.png" />
+    <Resource Include="assets\Check.svg" />
+    <Resource Include="assets\Checked.png" />
+    <Resource Include="assets\QR1.png" />
+    <Resource Include="assets\QR2.png" />
+    <Resource Include="assets\QR3.png" />
+    <Resource Include="assets\ScrollBar.png" />
+    <Resource Include="assets\Thumb.png" />
+    <Resource Include="assets\Thumb2.png" />
+    <Resource Include="assets\Thumb3.png" />
+    <Resource Include="assets\vector.svg" />
+    <Resource Include="mailsettings.json" />
+  </ItemGroup>
+
+</Project>
