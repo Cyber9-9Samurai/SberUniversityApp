@@ -71,12 +71,7 @@ namespace SberUniversity
                 Program3.Text = "Digital Strategy";
                 Desription3.Text = "поможет перестроить текущую бизнес-модель и провести цифровую трансформацию\nбизнеса для завоевания и сохранения лидерской позиции на рынке";
             }
-            UniversityPolitics.PlacementTarget = PopupTarget;
-            UniversityPolitics.Placement = PlacementMode.Center;
-            PersonalDataAgrement.PlacementTarget = PopupTarget;
-            PersonalDataAgrement.Placement = PlacementMode.Center;
-            Errors.PlacementTarget = PopupTarget;
-            Errors.Placement = PlacementMode.Center;
+           
             text = string.Concat(Header.Text, '\n', HeadText.Text, '\n', Program1.Text, '\n', Description1.Text, '\n', Program2.Text, '\n', Desription2.Text, '\n', Program3.Text, '\n', Desription3.Text);
             timer.Interval = TimeSpan.FromSeconds(0.5);
             timer.Tick += AnimationLoading;
@@ -117,7 +112,7 @@ namespace SberUniversity
                 catch (Exception)
                 {
                     Loading.Visibility = Visibility.Collapsed;
-                    Errors.IsOpen = true;
+                    Errors.Visibility = Visibility.Visible;
                 }
                 Loading.Visibility = Visibility.Collapsed;
                 
@@ -131,27 +126,28 @@ namespace SberUniversity
 
         private void ClosePolitic(object sender, RoutedEventArgs e)
         {
-            UniversityPolitics.IsOpen = false;
+            UniversityPolitics.Visibility = Visibility.Collapsed;
         }
         private void OpenPolitics(object sender, MouseEventArgs e)
         {
-            UniversityPolitics.IsOpen = true;
+            UniversityPolitics.Visibility = Visibility.Visible;
         }
 
         private void CloseAgrement(object sender, RoutedEventArgs e)
         {
-            PersonalDataAgrement.IsOpen = false;
+            PersonalDataAgrement.Visibility = Visibility.Collapsed;
         }
 
         private void OpenAgrement(object sender, MouseEventArgs e)
         {
-            PersonalDataAgrement.IsOpen = true;
+            PersonalDataAgrement.Visibility = Visibility.Visible;
         }
 
         private void ToMainPage(object sender,RoutedEventArgs e)
         {
-            Errors.IsOpen = false;
+            Errors.Visibility = Visibility.Collapsed;
             email.Text = "";
+            Agree.IsChecked = false;
             _MainFrame.Navigate(_MainPage);
             
         }
@@ -159,7 +155,8 @@ namespace SberUniversity
         private void TryAgain(object sender,RoutedEventArgs e)
         {
             email.Text = "";
-            Errors.IsOpen = false;
+            Agree.IsChecked = false;
+            Errors.Visibility = Visibility.Collapsed;
         }
 
     }

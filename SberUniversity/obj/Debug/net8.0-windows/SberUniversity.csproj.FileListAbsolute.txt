@@ -83,3 +83,4 @@ E:\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\SberUniversity.pdb
 E:\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\SberUniversity.genruntimeconfig.cache
 E:\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\ref\SberUniversity.dll
 E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\Styles\EndPageStyles.baml
+E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\SberUniversity.sourcelink.json

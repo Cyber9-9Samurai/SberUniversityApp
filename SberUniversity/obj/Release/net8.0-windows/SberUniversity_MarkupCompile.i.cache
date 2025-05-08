@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 E:\MVS projects\SberUniversity\SberUniversity\App.xaml
-41129143715
+91465624121
 
-122001292798
+13-346127579
 205-1734946322
-MainPage.xaml;MainWindow.xaml;ResultPageVar1.xaml;TestPage.xaml;
+EndPage.xaml;MainPage.xaml;MainWindow.xaml;ResultPageVar1.xaml;Styles\EndPageStyles.xaml;Styles\MainPageStyles.xaml;Styles\ResultPageStyle.xaml;Styles\TestPageStyles.xaml;TestPage.xaml;
 
 False
 

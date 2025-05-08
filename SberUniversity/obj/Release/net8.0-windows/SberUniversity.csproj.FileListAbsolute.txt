@@ -33,3 +33,12 @@ E:\MVS projects\SberUniversity\SberUniversity\obj\Release\net8.0-windows\refint\
 E:\MVS projects\SberUniversity\SberUniversity\obj\Release\net8.0-windows\SberUniversity.pdb
 E:\MVS projects\SberUniversity\SberUniversity\obj\Release\net8.0-windows\SberUniversity.genruntimeconfig.cache
 E:\MVS projects\SberUniversity\SberUniversity\obj\Release\net8.0-windows\ref\SberUniversity.dll
+E:\MVS projects\SberUniversity\SberUniversity\obj\Release\net8.0-windows\EndPage.g.cs
+E:\MVS projects\SberUniversity\SberUniversity\obj\Release\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+E:\MVS projects\SberUniversity\SberUniversity\obj\Release\net8.0-windows\App.baml
+E:\MVS projects\SberUniversity\SberUniversity\obj\Release\net8.0-windows\EndPage.baml
+E:\MVS projects\SberUniversity\SberUniversity\obj\Release\net8.0-windows\Styles\EndPageStyles.baml
+E:\MVS projects\SberUniversity\SberUniversity\obj\Release\net8.0-windows\Styles\MainPageStyles.baml
+E:\MVS projects\SberUniversity\SberUniversity\obj\Release\net8.0-windows\Styles\ResultPageStyle.baml
+E:\MVS projects\SberUniversity\SberUniversity\obj\Release\net8.0-windows\Styles\TestPageStyles.baml
+E:\MVS projects\SberUniversity\SberUniversity\obj\Release\net8.0-windows\SberUniversity.sourcelink.json

@@ -126,7 +126,7 @@
                                 Data="M4 10L7.64645 13.6464C7.84171 13.8417 8.15829 13.8417 8.35355 13.6464L16 6" 
                                 Stroke="#19BC8B" StrokeStartLineCap="Round" Margin="5,5,0,0" StrokeThickness="2" StrokeEndLineCap="Round" StrokeLineJoin="Round" Grid.Column="0"/>
                         </Border>
-                        <ContentPresenter Grid.Column="1" VerticalAlignment="Center" />
+                        
                     </Grid>
                     
                     <ControlTemplate.Triggers>
@@ -149,7 +149,8 @@
         <Setter Property="TextBlock.FontWeight" Value="Regular"/>
         <Setter Property="TextBlock.FontSize" Value="20"/>
         <Setter Property="TextBlock.Foreground" Value="#FFFFFF"/>
-        <Setter Property="TextBlock.Margin" Value="15,23,0,0"/>
+        <Setter Property="Canvas.Top" Value="182"/>
+        <Setter Property="Canvas.Left" Value="48"/>
         <Setter Property="TextBlock.Width" Value="700"/>
         <Setter Property="TextBlock.Height" Value="50"/>
         <Setter Property="TextBlock.TextAlignment" Value="Left"/>
@@ -189,7 +190,10 @@
         <Setter Property="Button.Margin" Value="32,0,0,0" />
     </Style>
     <Style x:Key="Popup">
-        <Setter Property="Popup.AllowsTransparency" Value="True"/>
+        <!--<Setter Property="Popup.AllowsTransparency" Value="True"/>-->
+        <Setter Property="Control.Height" Value="1920"/>
+        <Setter Property="Control.Width" Value="1080"/>
+        <Setter Property="Control.Visibility" Value="Collapsed"/>
     </Style>
     <Style x:Key="PopupContainer">
         <Setter Property="Canvas.Height" Value="1920"/>

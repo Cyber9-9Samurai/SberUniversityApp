@@ -52,25 +52,25 @@
                                заполните поле ниже."/>
                     <TextBox x:Name="email" Style="{StaticResource EmailInput}" TextChanged="OnTextChanged"/>
                     <TextBlock x:Name="Placeholder" Style="{StaticResource placeholder}" Text="E-mail"/>
-                    <CheckBox Style="{StaticResource Confirmation}" x:Name="Agree">
-                    <TextBlock Style="{StaticResource ConfirmationText}">
-    Я ознакомлен с <Run Style="{StaticResource PopupLink}" MouseDown="OpenPolitics">Политикой СберУниверситета</Run> и даю согласие на <Run Style="{StaticResource PopupLink}" MouseDown="OpenAgrement">обработку персональных данных</Run><Run x:Name="warning" Style="{StaticResource Warning}">(Обязательное поле для получения)</Run>
-                        </TextBlock>
-                    </CheckBox>
-                    <WrapPanel Style="{StaticResource ButtonsContainer}">
+                <CheckBox Style="{StaticResource Confirmation}" x:Name="Agree"/>
+                <TextBlock Style="{StaticResource ConfirmationText}">
+Я ознакомлен с <Run Style="{StaticResource PopupLink}" MouseDown="OpenPolitics">Политикой СберУниверситета</Run> и даю согласие на <Run Style="{StaticResource PopupLink}" MouseDown="OpenAgrement">обработку персональных данных</Run><Run x:Name="warning" Style="{StaticResource Warning}">(Обязательное поле для получения)</Run>
+                </TextBlock>
+                <WrapPanel Style="{StaticResource ButtonsContainer}">
                         <Button Style="{StaticResource EndButton}" x:Name="End" Click="EndTest">Завершить</Button>
                         <Button Style="{StaticResource GetButton}" x:Name="GetResults" Click="GetTheResults">Получить результаты</Button>
                     </WrapPanel>
                 </Canvas>
             </Canvas>
 
-        <Popup Grid.RowSpan="2" x:Name="UniversityPolitics" Style="{StaticResource Popup}">
+        <!--<Popup Grid.RowSpan="2" x:Name="UniversityPolitics" Style="{StaticResource Popup}">-->
+        <Canvas Grid.RowSpan="2" x:Name="UniversityPolitics"  Style="{StaticResource Popup}">
             <Canvas Style="{StaticResource PopupContainer}">
-            <Canvas Style="{StaticResource PopupContent}">
+                <Canvas Style="{StaticResource PopupContent}">
                     <TextBlock Style="{StaticResource PoliticsHeader}" Text="Политика в отношении обработки персональных данных &#xA;АНО ДПО «Корпоративный университет Сбербанка»"/>
                     <ScrollViewer Style="{StaticResource PoliticsCont}">
                         <StackPanel Background="White">
-                            
+
 
                             <TextBlock Style="{StaticResource PoliticsText}" Text="1 Общие положения
                                          &#xA;&#xA;1.1. АНО ДПО «Корпоративный университет Сбербанка» (далее –
@@ -216,9 +216,11 @@
                     <Button Style="{StaticResource PoliticsButton}" Click="ClosePolitic">Закрыть</Button>
                 </Canvas>
             </Canvas>
-            </Popup>
-            <Popup  x:Name="PersonalDataAgrement" Style="{StaticResource Popup}">
-                <Canvas Style="{StaticResource PopupContainer}">
+        </Canvas>
+        <!--</Popup>-->
+            <!--<Popup  x:Name="PersonalDataAgrement" Style="{StaticResource Popup}">-->
+        <Canvas x:Name="PersonalDataAgrement" Style="{StaticResource Popup}">
+            <Canvas Style="{StaticResource PopupContainer}">
                 <Canvas Style="{StaticResource PopupContent2}">
                     <StackPanel Style="{StaticResource AgrementContent}">
                         <TextBlock Style="{StaticResource AgreementHeader}" Text="Согласие &#xA;на обработку персональных данных"/>
@@ -251,21 +253,24 @@
                         <Button Style="{StaticResource AgrementButton}" Click="CloseAgrement">Закрыть</Button>
                     </Canvas>
                 </Canvas>
-            </Popup>
-            <Popup x:Name="Errors" Style="{StaticResource Popup}">
-                <Canvas Style="{StaticResource PopupContainer}">
-                    <Canvas Style="{StaticResource PopupContent3}">
-                        <TextBlock Style="{StaticResource ErrorHeader}" Text="Что-то пошло
+            </Canvas>
+            <!--</Popup>-->
+            <!--<Popup x:Name="Errors" Style="{StaticResource Popup}">-->
+        <Canvas x:Name="Errors" Style="{StaticResource Popup}">
+            <Canvas Style="{StaticResource PopupContainer}">
+            <Canvas Style="{StaticResource PopupContent3}">
+                <TextBlock Style="{StaticResource ErrorHeader}" Text="Что-то пошло
                                    не так"/>
-                        <TextBlock Style="{StaticResource ErrorText}" Text="Проверьте введенные данные
+                <TextBlock Style="{StaticResource ErrorText}" Text="Проверьте введенные данные
                                    и попробуйте еще раз"/>
-                        <WrapPanel  Style="{StaticResource ErrorButtons}">
-                            <Button Style="{StaticResource ErrorEndButton}" Click="ToMainPage">На главную</Button>
-                            <Button Style="{StaticResource TryAgainButton}" Click="TryAgain" Canvas.Top="10">Попробовать еще раз</Button>
-                        </WrapPanel>
-                    </Canvas>
-                </Canvas>
-            </Popup>
+                <WrapPanel  Style="{StaticResource ErrorButtons}">
+                    <Button Style="{StaticResource ErrorEndButton}" Click="ToMainPage">На главную</Button>
+                    <Button Style="{StaticResource TryAgainButton}" Click="TryAgain" Canvas.Top="10">Попробовать еще раз</Button>
+                </WrapPanel>
+            </Canvas>
+        </Canvas>
+        </Canvas>
+        <!--</Popup>-->
         <Canvas x:Name="Loading" Style="{StaticResource MailSent}">
             <TextBlock Style="{StaticResource AnimText}" x:Name="AnimatedText" Text="LOAd"/>
         </Canvas>
