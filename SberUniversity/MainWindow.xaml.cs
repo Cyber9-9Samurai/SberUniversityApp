@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Microsoft.Extensions.Hosting;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,6 +17,7 @@ namespace SberUniversity;
 /// </summary>
 public partial class MainWindow : Window
 {
+    
     public MainWindow()
     {
         InitializeComponent();

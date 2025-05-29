@@ -214,7 +214,7 @@ namespace SberUniversity {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SberUniversity;component/resultpagevar1.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SberUniversity;V1.0.0.0;component/resultpagevar1.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ResultPageVar1.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

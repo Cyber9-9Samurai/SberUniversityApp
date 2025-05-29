@@ -70,7 +70,7 @@ namespace SberUniversity {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SberUniversity;component/endpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SberUniversity;V1.0.0.0;component/endpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\EndPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
