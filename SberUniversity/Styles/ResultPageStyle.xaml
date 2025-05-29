@@ -104,7 +104,7 @@
         <Setter Property="TextBlock.Width" Value="77"/>
         <Setter Property="TextBlock.Height" Value="30"/>
         <Setter Property="TextBlock.IsHitTestVisible" Value="False"/>
-        <Setter Property="TextBlock.Visibility" Value="Visible"/>
+        
     </Style>
     <Style x:Key="Confirmation">
         <Setter Property="Canvas.Top" Value="183"/>
@@ -189,16 +189,12 @@
         <Setter Property="Button.FontSize" Value="24"/>
         <Setter Property="Button.Margin" Value="32,0,0,0" />
     </Style>
-    <Style x:Key="Popup">
-        <!--<Setter Property="Popup.AllowsTransparency" Value="True"/>-->
-        <Setter Property="Control.Height" Value="1920"/>
-        <Setter Property="Control.Width" Value="1080"/>
-        <Setter Property="Control.Visibility" Value="Collapsed"/>
-    </Style>
+    
     <Style x:Key="PopupContainer">
         <Setter Property="Canvas.Height" Value="1920"/>
         <Setter Property="Canvas.Width" Value="1080"/>
         <Setter Property="Canvas.Background" Value="#CC002436"/>
+        <Setter Property="Control.Visibility" Value="Collapsed"/>
     </Style>
     <Style x:Key="PopupContent">
         <Setter Property="Canvas.Width" Value="960"/>

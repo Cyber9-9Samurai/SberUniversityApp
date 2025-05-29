@@ -1,0 +1,48 @@
+﻿<Page x:Class="SberUniversity.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SberUniversity"
+      xmlns:svgc="http://sharpvectors.codeplex.com/svgc/" 
+      xmlns:vm="clr-namespace:SberUniversity.ViewModel"
+      mc:Ignorable="d" 
+      d:DesignHeight="1920" d:DesignWidth="1080"
+      Title="MainPage"
+      >
+    <Page.Resources>
+        <ResourceDictionary Source="/Styles/MainPageStyles.xaml"/>
+    </Page.Resources>
+
+    <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="396"/>
+                <RowDefinition Height="1128"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <svgc:SvgViewbox Grid.Column="0" Source="assets/vector.svg" x:Name="SVG" Style="{StaticResource svg}"/>
+            
+            <Canvas Grid.Row="1" Width="795" Height="1128">
+                <TextBlock Text="SberQ" Style="{StaticResource Header1}"/>
+                <TextBlock  Style="{StaticResource Text1}" Text="SberQ — это сочетание инструментов психодиагностики и оценки компетенций с использованием реалистичной бизнес-
+                           симуляции для диагностики
+                           управленческих компетенций
+                           и потенциала. Метод разработан
+                           экспертами СберУниверситета, HR-блоком
+                           Сбера и Лабораторией нейронаук
+                           и поведения человека."/>
+
+                <Canvas Style="{StaticResource QRContainer}">
+                    <Canvas Style="{StaticResource QRBack}"/>
+                    <Image Style="{StaticResource QR1}" Source="/assets/QR1.png"/>
+                    <TextBlock Style="{StaticResource QR1Descrip}" Text="Узнать больше
+                               про оценку
+                               руководителей SberQ"/>
+                </Canvas>
+
+            <Button Style="{StaticResource StartButton}" x:Name="TestStartbtn" Command="{Binding StartTestCommand}">Проверить себя</Button>
+            </Canvas>
+        </Grid>
+    
+</Page>
