@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SberUniversity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d3b52236cf42eeb05d4b99dc73e507f5457a97f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c68b725e0b34267f61c343532800e5f70435931b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SberUniversity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SberUniversity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
