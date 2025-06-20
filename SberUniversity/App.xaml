@@ -5,10 +5,14 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Styles/MainPageStyles.xaml" />
-                <ResourceDictionary Source="/Styles/TestPageStyles.xaml"/>
-                <ResourceDictionary Source="/Styles/ResultPageStyle.xaml"/>
-                <ResourceDictionary Source="/Styles/EndPageStyles.xaml"/>
+                <ResourceDictionary Source="/Styles/TextElemnetsStyles.xaml"/>
+                <ResourceDictionary Source="/Styles/ButtonsStyles.xaml"/>
+                <ResourceDictionary Source="/Styles/ImagesStyles.xaml"/>
+                <ResourceDictionary Source="/Styles/HeadersStyles.xaml"/>
+                <ResourceDictionary Source="/Styles/CheckBoxStyles.xaml"/>
+                <ResourceDictionary Source="/Styles/ElementsContainersStyles.xaml"/>
+                <ResourceDictionary Source="/Styles/ScrollBarsStyles.xaml"/>
+                <ResourceDictionary Source="/Styles/SlidersStyles.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

@@ -1,0 +1,225 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="Questions">
+        <Setter Property="Canvas.Width" Value="880"/>
+        <Setter Property="Canvas.Height" Value="146"/>
+        <Setter Property="Canvas.Margin" Value="0,0,0,72"/>
+    </Style>
+
+    <Style x:Key="TicksCont">
+        <Setter Property="Grid.Width" Value="880"/>
+        <Setter Property="Canvas.Top" Value="116"/>
+    </Style>
+    
+    <Style x:Key="QuestionsV2" BasedOn="{StaticResource Questions}">
+        <Setter Property="Canvas.Height" Value="166"/>
+    </Style>
+    
+    <Style x:Key="LastQuestion" BasedOn="{StaticResource Questions}">
+        <Setter Property="Canvas.Margin" Value="0,0,0,0"/>
+    </Style>
+    
+    <Style x:Key="FirstQuestion" BasedOn="{StaticResource Questions}">
+        <Setter Property="Canvas.Margin" Value="0,40,0,72"/>
+    </Style>
+
+    <Style x:Key="TestContainer">
+        <Setter Property="Canvas.Width" Value="960"/>
+        <Setter Property="Canvas.Height" Value="1644" />
+        <Setter Property="Canvas.Margin" Value="60,5,60,102"/>
+    </Style>
+    
+    <Style x:Key="TestQuestions">
+        <Setter Property="StackPanel.Background" Value="#33FFFFFF"/>
+        <Setter Property="StackPanel.Clip">
+            <Setter.Value>
+                <RectangleGeometry RadiusX="36" RadiusY="36" Rect="0,0,960,1158"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Canvas.Top" Value="335"/>
+        <Setter Property="StackPanel.Width" Value="960"/>
+        <Setter Property="StackPanel.Height" Value="1158"/>
+    </Style>
+
+    <Style x:Key="MailSent">
+        <Setter Property="Canvas.Background" Value="#CC002436"/>
+        <Setter Property="Canvas.Visibility" Value="Collapsed"/>
+        <Setter Property="Canvas.Height" Value="1920"/>
+        <Setter Property="Canvas.Width" Value="1080"/>
+    </Style>
+
+    <Style x:Key="NiceScrollBar" TargetType="ScrollBar">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ScrollBar">
+                    <Grid Background="Transparent">
+                        <Track Name="PART_Track" 
+                IsDirectionReversed="true" Width="10" >
+                            <Track.DecreaseRepeatButton>
+                                <RepeatButton IsHitTestVisible="False" BorderThickness="0" Command="ScrollBar.LineUpCommand" VerticalAlignment="Stretch" Background="Transparent"/>
+                            </Track.DecreaseRepeatButton>
+                            <Track.Thumb>
+                                <Thumb Width="10">
+                                    <Thumb.Template>
+                                        <ControlTemplate TargetType="Thumb">
+                                            <Rectangle Fill="#B0005F61" RadiusX="5" RadiusY="5"/>
+                                        </ControlTemplate>
+                                    </Thumb.Template>
+                                </Thumb>
+                            </Track.Thumb>
+                            <Track.IncreaseRepeatButton>
+                                <RepeatButton IsHitTestVisible="False" BorderThickness="0" VerticalAlignment="Stretch" Command="ScrollBar.LineDownCommand" Background="Transparent"/>
+                            </Track.IncreaseRepeatButton>
+                        </Track>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="PoliticsCont">
+        <Setter Property="ScrollViewer.Height" Value="1401"/>
+        <Setter Property="ScrollViewer.Width" Value="840"/>
+        <Setter Property="Canvas.Top" Value="140"/>
+        <Setter Property="Canvas.Left" Value="40"/>
+        <Setter Property="ScrollViewer.Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ScrollViewer">
+                    <Grid>
+                        <ScrollContentPresenter />
+                        <ScrollBar x:Name="PART_VerticalScrollBar"
+                           Orientation="Vertical"
+                           Style="{StaticResource NiceScrollBar}"
+                           Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}"
+                           Maximum="{TemplateBinding ScrollableHeight}"
+                           Value="{TemplateBinding VerticalOffset}"
+                           ViewportSize="{TemplateBinding ViewportHeight}"
+                           Margin="820,23,0,0"
+                           
+                           />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonsContainer">
+        <Setter Property="Canvas.Top" Value="264"/>
+    </Style>
+    
+    <Style x:Key="PopupContainer">
+        <Setter Property="Canvas.Height" Value="1920"/>
+        <Setter Property="Canvas.Width" Value="1080"/>
+        <Setter Property="Canvas.Background" Value="#CC002436"/>
+        <Setter Property="Control.Visibility" Value="Collapsed"/>
+    </Style>
+    
+    <Style x:Key="PopupContent">
+        <Setter Property="Canvas.Width" Value="960"/>
+        <Setter Property="Canvas.Height" Value="1800"/>
+        <Setter Property="Canvas.Background" Value="White"/>
+        <Setter Property="Canvas.Clip">
+            <Setter.Value>
+                <RectangleGeometry RadiusX="36" RadiusY="36" Rect="0,0,960,1800" />
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Canvas.Top" Value="60"/>
+        <Setter Property="Canvas.Left" Value="60"/>
+    </Style>
+    
+    <Style x:Key="PopupContent2">
+        <Setter Property="Canvas.Width" Value="960"/>
+        <Setter Property="Canvas.Height" Value="1122"/>
+        <Setter Property="Canvas.Top" Value="399"/>
+        <Setter Property="Canvas.Left" Value="60"/>
+        <Setter Property="Canvas.Background" Value="White"/>
+        <Setter Property="Canvas.Clip">
+            <Setter.Value>
+                <RectangleGeometry RadiusX="36" RadiusY="36" Rect="0,0,960,1122" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="PopupContent3" BasedOn="{StaticResource PopupContent2}">
+        <Setter Property="Canvas.Height" Value="713"/>
+        <Setter Property="Canvas.Width" Value="960"/>
+        <Setter Property="Canvas.Top" Value="604"/>
+        <Setter Property="Canvas.Left" Value="60"/>
+        <Setter Property="Canvas.Clip">
+            <Setter.Value>
+                <RectangleGeometry RadiusX="36" RadiusY="36" Rect="0,0,960,713" />
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Canvas.Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="../assets/Background.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="AgrementContent" BasedOn="{StaticResource PoliticsCont}">
+        <Setter Property="ScrollViewer.Height" Value="800"/>
+        <Setter Property="ScrollViewer.Width" Value="840"/>
+        <Setter Property="Canvas.Top" Value="70"/>
+        <Setter Property="Canvas.Left" Value="40"/>
+    </Style>
+
+    <Style x:Key="ProgramsList">
+        <Setter Property="Canvas.Top" Value="538"/>
+        <Setter Property="StackPanel.Width" Value="796"/>
+        <Setter Property="StackPanel.Height" Value="325"/>
+    </Style>
+
+    <Style x:Key="TextContainer">
+        <Setter Property="Canvas.Height" Value="863"/>
+        <Setter Property="Canvas.Width" Value="796"/>
+        <Setter Property="Canvas.Left" Value="142"/>
+
+    </Style>
+    
+    <Style x:Key="ContactsContainer" BasedOn="{StaticResource TextContainer}">
+        <Setter Property="Canvas.Top" Value="935"/>
+        <Setter Property="Canvas.Height" Value="358"/>
+    </Style>
+
+    <Style x:Key="QRContainer">
+        <Setter Property="Canvas.Height" Value="263"/>
+        <Setter Property="Canvas.Width" Value="655"/>
+        <Setter Property="Canvas.Top" Value="648"/>
+        <Setter Property="Canvas.Left" Value="70"/>
+    </Style>
+
+    <Style x:Key="EndContainer">
+        <Setter Property="Canvas.Width" Value="795"/>
+        <Setter Property="Canvas.Height" Value="1156"/>
+        <Setter Property="Canvas.Margin" Value="142,0,142,382"/>
+    </Style>
+
+    <Style x:Key="EndQRContainer1" BasedOn="{StaticResource QRContainer}">
+        <Setter Property="Canvas.Background" Value="#33FFFFFF"/>
+        <Setter Property="Canvas.Clip">
+            <Setter.Value>
+                <RectangleGeometry RadiusX="36" RadiusY="36" Rect="0,0,655,263"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Canvas.Top" Value="373"/>
+    </Style>
+
+    <Style x:Key="EndQRContainer2" BasedOn="{StaticResource EndQRContainer1}">
+        <Setter Property="Canvas.Top" Value="676"/>
+    </Style>
+
+    <Style x:Key="ErrorButtons" BasedOn="{StaticResource ButtonsContainer}">
+        <Setter Property="Canvas.Top" Value="499"/>
+        <Setter Property="Canvas.Left" Value="120"/>
+        <Setter Property="WrapPanel.Height" Value="94"/>
+        <Setter Property="WrapPanel.Width" Value="720"/>
+    </Style>
+
+    <Style x:Key="WhiteBorder">
+        <Setter Property="Border.BorderThickness" Value="1"/>
+        <Setter Property="Border.BorderBrush" Value="White"/>
+        <Setter Property="Border.CornerRadius" Value="12"/>
+    </Style>
+</ResourceDictionary>
