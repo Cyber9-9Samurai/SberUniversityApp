@@ -8,9 +8,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="1920" d:DesignWidth="1080"
       Title="TestPage">
-    <Page.Resources>
-        <ResourceDictionary Source="/Styles/TestPageStyles.xaml"/>
-    </Page.Resources>
+    
     <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="169"/>

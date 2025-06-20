@@ -10,9 +10,7 @@
       Title="ResultPageVar1"
       xmlns:b ="http://schemas.microsoft.com/xaml/behaviors" 
       >
-    <Page.Resources>
-        <ResourceDictionary Source="/Styles/ResultPageStyle.xaml"/>
-    </Page.Resources>
+   
     
         <Grid x:Name="PopupTarget">
             <Grid.RowDefinitions>
@@ -57,7 +55,7 @@
 Я ознакомлен с <Run Style="{StaticResource PopupLink}"><b:Interaction.Triggers><b:EventTrigger EventName="MouseDown"><b:InvokeCommandAction Command="{Binding OpenPoliticsCommand}"/></b:EventTrigger></b:Interaction.Triggers> СберУниверситета</Run> и даю согласие на <Run Style="{StaticResource PopupLink}"><b:Interaction.Triggers><b:EventTrigger EventName="MouseDown"><b:InvokeCommandAction Command="{Binding OpenAgrementCommand}"/></b:EventTrigger></b:Interaction.Triggers> обработку персональных данных</Run><Run x:Name="warning" Style="{StaticResource Warning}" Foreground="{Binding WarningForeground}">(Обязательное поле для получения)</Run>
                 </TextBlock>
                 <WrapPanel Style="{StaticResource ButtonsContainer}">
-                        <Button Style="{StaticResource EndButton}" x:Name="End" Command="{Binding EndTestCommand}">Завершить</Button>
+                        <Button Style="{StaticResource EndButtonV2}" x:Name="End" Command="{Binding EndTestCommand}">Завершить</Button>
                         <Button Style="{StaticResource GetButton}" x:Name="GetResults" Command="{Binding GetTheResultsCommand}">Получить результаты</Button>
                     </WrapPanel>
                 </Canvas>

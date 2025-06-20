@@ -10,9 +10,7 @@
       d:DesignHeight="1920" d:DesignWidth="1080"
       Title="MainPage"
       >
-    <Page.Resources>
-        <ResourceDictionary Source="/Styles/MainPageStyles.xaml"/>
-    </Page.Resources>
+    
 
     <Grid>
             <Grid.RowDefinitions>

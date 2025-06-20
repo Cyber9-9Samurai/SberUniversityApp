@@ -27,10 +27,7 @@ E:\MVS projects\SberUniversity\SberUniversity\bin\Debug\net8.0-windows\SharpVect
 E:\MVS projects\SberUniversity\SberUniversity\bin\Debug\net8.0-windows\SharpVectors.Runtime.Wpf.dll
 E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\SberUniversity.csproj.AssemblyReference.cache
 E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\SberUniv.824C8A5A.Up2Date
-E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\Styles\MainPageStyles.baml
-E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\Styles\TestPageStyles.baml
 E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\App.baml
-E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\Styles\ResultPageStyle.baml
 E:\SberUniversity\SberUniversity\bin\Debug\net8.0-windows\SberUniversity.exe
 E:\SberUniversity\SberUniversity\bin\Debug\net8.0-windows\SberUniversity.deps.json
 E:\SberUniversity\SberUniversity\bin\Debug\net8.0-windows\SberUniversity.runtimeconfig.json
@@ -73,7 +70,6 @@ E:\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\refint\SberUniversity.
 E:\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\SberUniversity.pdb
 E:\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\SberUniversity.genruntimeconfig.cache
 E:\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\ref\SberUniversity.dll
-E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\Styles\EndPageStyles.baml
 E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\SberUniversity.sourcelink.json
 E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\View\EndPage.g.cs
 E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\View\MainPage.g.cs
@@ -120,3 +116,11 @@ E:\MVS projects\SberUniversity\SberUniversity\bin\Debug\net8.0-windows\runtimes\
 E:\MVS projects\SberUniversity\SberUniversity\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 E:\MVS projects\SberUniversity\SberUniversity\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 E:\MVS projects\SberUniversity\SberUniversity\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\Styles\ButtonsStyles.baml
+E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\Styles\CheckBoxStyles.baml
+E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\Styles\ElementsContainersStyles.baml
+E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\Styles\HeadersStyles.baml
+E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\Styles\ImagesStyles.baml
+E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\Styles\ScrollBarsStyles.baml
+E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\Styles\SlidersStyles.baml
+E:\MVS projects\SberUniversity\SberUniversity\obj\Debug\net8.0-windows\Styles\TextElemnetsStyles.baml
